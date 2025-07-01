@@ -10,3 +10,6 @@ const counterSlice = createSlice({
     reducers : { }
 
 })
+
+
+export default counterSlice.reducer ;
