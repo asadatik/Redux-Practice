@@ -1,6 +1,6 @@
 import {configureStore} from "@reduxjs/toolkit"
 
-import counterReducer from "./feature/counter/counterSlice"
+import counterReducer from "../Redux/feature/counter/counterSlice"
 
  export   const store = configureStore ({
 
@@ -8,3 +8,7 @@ import counterReducer from "./feature/counter/counterSlice"
         counter : counterReducer 
     }, 
 }) ;
+
+
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;
