@@ -20,8 +20,8 @@ function App() {
 
 
   return (
-    <>
-     <h1>COUNTER WITH REDUX</h1>
+  <div>
+ <h1>COUNTER WITH REDUX</h1>
       <button  onClick={  ()=>  handleIncrement(5)}  >Increment by 5 </button>
 
       <button  onClick={  ()=>  handleIncrement(1)}  >Increment</button>
@@ -30,7 +30,10 @@ function App() {
 
 
 
-    </>
+  </div>
+    
+
+    
   )
 }
 
